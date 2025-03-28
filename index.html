@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            margin: auto;
+        }
+
+        header {
+
+            padding: 20px;
+        }
+
+
+
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .header_middle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header_main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            height: 200px;
+
+        }
+
+        .main_container {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .left_sidebar{
+
+            display: inline-block;
+            width: 300px;
+            box-sizing: border-box;
+            padding: 20px;
+
+        }
+
+
+        .menu_aside p{
+            margin: 12px 0;
+        }
+
+        div.hr{
+            height: 2px;
+            background-color: black;
+            margin: 15px 0;
+        }
+
+        .main_content{
+            display: inline-block;
+            width: 300px;
+            box-sizing: border-box;
+            padding: 20px;
+
+        }
+        
+        .head_text_main_section{
+            padding: 0 0 10px 0;
+        }
+        
+        .main_content p {
+            padding: 4px 0;
+        }
+
+        .main_content a {
+            display: inline-block;
+            margin: 5px 0;
+            text-decoration: none;
+            cursor: blue;
+        }
+
+        .right_sidebar{
+            display: inline-block;
+            width: 300px;
+            box-sizing: border-box;
+            padding: 20px;
+
+        }
+
+
+        .container_two{
+            margin: auto;
+            padding: 20px;
+        }
+
+        .container_cards{
+            display: flex;
+            flex-direction: row; 
+            justify-content:center
+        }
+
+        .card {
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 10px;
+            display: inline-block;
+            width:20%;
+
+        }
+
+        .card .p_Sub{
+            color: grey;
+            opacity: 0.5;
+        }
+
+
+        footer {
+           
+            text-align: center;
+        }
+
+        footer h4{
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header_middle">
+                <h3>Mirzayev Orxan</h3>
+                <ul>
+                    <li><a href="#">Home &nbsp / &nbsp</a></li>
+                    <li><a href="#">Projects &nbsp / &nbsp</a></li>
+                    <li><a href="#">Articles &nbsp / &nbsp</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="header_main">
+                <h1>Fronend Devoloper</h1>
+                <p>html only with proper layout, no styling</p>
+            </div>
+
+        </header>
+
+        <div class="main_container">
+            <aside class="left_sidebar">
+                <h3 class="head_text_main_section">Projects</h3>
+                <div class="menu_aside">
+                    <p>HTML Only Portfolio</p>
+                    <div class="hr"></div>
+                    <p>Calculator</p>
+                    <div class="hr"></div>
+                    <p>Quiz App</p>
+                    <div class="hr"></div>
+                    <p>Countdown Timer</p>
+                    <div class="hr"></div>
+                    <p>Product Upcoming Page</p>
+                </div>
+            </aside>
+            <main class="main_content">
+                <h3 class="head_text_main_section">Work Experience</h3>
+                <p><small>smaroadmap.sh</small> <br> 
+                    Solved all the frontend projects <br>
+                </p>
+                <a class="main_a_link" href="">Visitmy Profie</a>
+
+                <div class="hr"></div>
+
+                <h3> OpenSource Work </h3>
+
+                <p>Contributed to 50 opensource <br>
+                projects. Made my own projects with <br>
+                200 GitHub Stars.</p>
+
+                <a class="main_a_link" href="">Visitmy GitHub Profle</a>
+                
+
+
+            </main>
+            <aside class="right_sidebar">
+                <h3 class="head_text_main_section">Education</h3>
+
+                <p>Graduated with 3.76 out of 4 <br>
+                    CGPA. Won Acme Hackathon. <br>
+                    Organized 30 sessions.</p> <br>
+
+                <p>Courses I took: <br> <br>
+
+                    - Object Oriented Programming <br>
+                    - Data Structures and Algorithms <br>
+                    - Web Engineering <br>
+
+                    - Artificial Intelligence <br>
+
+                    - Human Computer Interaction <br>
+
+                    - Computer Graphics <br>
+
+                    - Database Management Systems <br>
+                    - Distributed Database Systems <br>
+                    - Discreet Mathematics <br>
+                </p>
+
+            </aside>
+        </div>
+
+        <div class="container_two">
+            <h3>Reviews from my Teachers
+            </h3>
+            <div class="container_cards">
+                <div class="card">
+                    <p class="p_Main">John doe was a brillant
+                        ‘Stdont aways sond ot
+                        i e assgnmorts.
+                        </p>
+                    <p class="p_Sub">Jane Doe <br>
+                        Assistant Professor
+                        </p>
+                </div>
+                <div class="card">
+                    <p class="p_Main">John doe was a brillant
+                        ‘Stdont aways sond ot
+                        i e assgnmorts.
+                        </p>
+                    <p class="p_Sub">Jane Doe <br>
+                        Assistant Professor
+                        </p>
+                </div>
+                <div class="card">
+                    <p class="p_Main">John doe was a brillant
+                        ‘Stdont aways sond ot
+                        i e assgnmorts.
+                        </p>
+                    <p class="p_Sub">Jane Doe <br>
+                        Assistant Professor
+                        </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h4>© all rights reserved 2025
+            </h4>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
